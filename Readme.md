@@ -86,7 +86,7 @@ A function is created to perform NER on new text data. Given a headline, the fun
        return [(ent.text, ent.label_) for ent in doc.ents]
 
 
-### **Project Structure**
+## **Project Structure**
 
 - **NLP_01.ipynb**: Jupyter notebook with the code and step-by-step process.
 - **README.md**: Project documentation.
