@@ -72,7 +72,7 @@ A function is created to perform NER on new text data. Given a headline, the fun
    ```bash 
    import spacy
    nlp = spacy.load("en_core_web_sm")
-   Disable other pipelines and train NER model
+   #Disable other pipelines and train NER model
 
 
 - **Save and Evaluate the Model**
@@ -90,7 +90,7 @@ A function is created to perform NER on new text data. Given a headline, the fun
 
 - **NLP_01.ipynb**: Jupyter notebook with the code and step-by-step process.
 - **README.md**: Project documentation.
-- **trained_model/**: Directory where the trained spaCy model is saved.
+- **trained_model**: Directory where the trained spaCy model is saved.
 
 ## **Results and Insights**
 
