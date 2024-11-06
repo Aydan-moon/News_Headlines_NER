@@ -57,7 +57,7 @@ A function is created to perform NER on new text data. Given a headline, the fun
   pip install spacy datasets
 
 
-Running the Project
+###Running the Project
 1. Load the Dataset
 
 from datasets import load_dataset
@@ -71,7 +71,7 @@ Convert the CoNLL-2003 dataset into spaCy’s training format.
 
 import spacy
 nlp = spacy.load("en_core_web_sm")
-# Disable other pipelines and train NER model
+Disable other pipelines and train NER model
 
 
 4. Save and Evaluate the Model
@@ -102,4 +102,4 @@ def perform_ner(text, nlp):
 - Fine-tune hyperparameters and consider using data augmentation for better generalization.
 
 **Contact**
-For any questions, reach out at [aydanrzyv@gmail.com].
+For any questions, reach out at aydanrzyv@gmail.com.
