@@ -59,7 +59,7 @@ A function is created to perform NER on new text data. Given a headline, the fun
 
 ### Running the Project
 **1. Load the Dataset**
-   '''bash
+   ```bash
    from datasets import load_dataset
    dataset = load_dataset("conll2003")
 
@@ -68,21 +68,21 @@ A function is created to perform NER on new text data. Given a headline, the fun
    Convert the CoNLL-2003 dataset into spaCy’s training format.
 
 **3. Train the Model**
-   '''bash
+   ```bash
    import spacy
    nlp = spacy.load("en_core_web_sm")
    Disable other pipelines and train NER model
 
 
 **4. Save and Evaluate the Model**
-     '''bash
+     ```bash
    nlp.to_disk("/path/to/save/model")
 
 **5. Run NER on New Headlines**
-     '''bash
+     ```bash
    def perform_ner(text, nlp):
        doc = nlp(text)
-    return [(ent.text, ent.label_) for ent in doc.ents]
+       return [(ent.text, ent.label_) for ent in doc.ents]
 
 
 ## **Project Structure**
