@@ -57,49 +57,49 @@ A function is created to perform NER on new text data. Given a headline, the fun
   pip install spacy datasets
 
 
-###Running the Project
-1. Load the Dataset
+### Running the Project
+1. **Load the Dataset**
 
-from datasets import load_dataset
-dataset = load_dataset("conll2003")
+   from datasets import load_dataset
+   dataset = load_dataset("conll2003")
 
-2. Prepare Data for spaCy
+2. **Prepare Data for spaCy**
 
-Convert the CoNLL-2003 dataset into spaCy’s training format.
+   Convert the CoNLL-2003 dataset into spaCy’s training format.
 
-3. Train the Model
+3. **Train the Model**
 
-import spacy
-nlp = spacy.load("en_core_web_sm")
-Disable other pipelines and train NER model
+   import spacy
+   nlp = spacy.load("en_core_web_sm")
+   Disable other pipelines and train NER model
 
 
-4. Save and Evaluate the Model
+4. **Save and Evaluate the Model**
 
-nlp.to_disk("/path/to/save/model")
+   nlp.to_disk("/path/to/save/model")
 
-5. Run NER on New Headlines
+5. **Run NER on New Headlines**
 
-def perform_ner(text, nlp):
-    doc = nlp(text)
+   def perform_ner(text, nlp):
+       doc = nlp(text)
     return [(ent.text, ent.label_) for ent in doc.ents]
 
 
-**Project Structure**
+## **Project Structure**
 
 - **NLP_01.ipynb**: Jupyter notebook with the code and step-by-step process.
 - **README.md**: Project documentation.
 - **trained_model/**: Directory where the trained spaCy model is saved.
 
-**Results and Insights**
+## **Results and Insights**
 
 - **Overall Accuracy**: The model shows strong performance, especially in identifying the most common entity classes.
 
 - **Limitations**: The model can be improved to detect less frequent and complex entities.
 
-**Future Improvements**
+## **Future Improvements**
 - Experiment with different NER models or architectures to improve classification of less common entities.
 - Fine-tune hyperparameters and consider using data augmentation for better generalization.
 
-**Contact**
+### **Contact**
 For any questions, reach out at aydanrzyv@gmail.com.
