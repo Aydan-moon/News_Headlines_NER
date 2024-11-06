@@ -59,9 +59,9 @@ A function is created to perform NER on new text data. Given a headline, the fun
 
 ### Running the Project
 **1. Load the Dataset**
-    ```bash
-   from datasets import load_dataset
-   dataset = load_dataset("conll2003")
+     ```bash
+     from datasets import load_dataset
+     dataset = load_dataset("conll2003")
 
 **2. Prepare Data for spaCy**
 
