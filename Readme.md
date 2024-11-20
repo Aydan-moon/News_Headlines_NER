@@ -103,4 +103,5 @@ A function is created to perform NER on new text data. Given a headline, the fun
 - Fine-tune hyperparameters and consider using data augmentation for better generalization.
 
 ### **Contact**
-For any questions, reach out at aydanrzyv@gmail.com.
+Feel free to reach out for questions or collaboration:
+📧 aydanrzyv@gmail.com
